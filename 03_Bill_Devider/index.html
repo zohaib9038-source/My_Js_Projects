@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="builder">
+        <p>Bill</p>
+        <input class="price" type="text" placeholder="Enter  price">
+        <div class="tip">
+            <p>Select Tip</p>
+            <div class="button1stRow">
+                <button>10%</button>
+                <button>40%</button>
+                <button>15%</button>
+                <button>20%</button>
+                <button>30%</button>
+                <button>50%</button>
+            </div>
+            <div class="numberOfPeople">
+                <p>Number of People</p>
+                <input type="text" disabled placeholder="Number of People">
+            </div>
+            <div class="generateBill">
+                <button disabled data-billcal="true">Generate Bill</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="BillPrice">
+        <div class="tipAmount">
+            <h4>Tip Amount</h4>
+            <span></span>
+        </div>
+        <div class="total">
+            <h4>Total</h4>
+            <span></span>
+        </div>
+        <div class="perPersonBill">
+            <h4>Each Person Bill</h4>
+            <span></span>
+        </div>
+        <div class="reset">
+            <button>Reset</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

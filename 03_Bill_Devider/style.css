@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 3.44rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.builder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 2rem; */
+    gap: 1.14rem;
+}
+
+.button1stRow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.1rem;
+}
+
+.button1stRow button {
+    padding-inline: 1.49534rem;
+    padding-block: 0.64rem;
+    margin-top: 1rem;
+    margin-right: 0.44rem;
+    border: none;
+    background-color: #9c60ff;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-size: 1.14rem;
+}
+
+.numberOfPeople input,
+.numberOfPeople p {
+    margin-top: 0.79rem;
+}
+
+.builder .price {
+    padding-block: 0.551rem;
+    width: 100%;
+    max-width: 308px;
+    border-radius: 4px;
+}
+
+.builder input {
+    padding-left: 0.3rem;
+}
+
+.numberOfPeople input {
+    padding-block: 0.551rem;
+    width: 100%;
+    max-width: 308px;
+    background-color: rgb(181, 177, 177);
+    border: none;
+}
+
+.generateBill button {
+    padding-block: 0.551rem;
+    margin-top: 1.589rem;
+    width: 100%;
+    max-width: 308px;
+    border: none;
+    color: white;
+    background-color: #9c60ff;
+
+}
+
+.redCursor {
+    cursor: not-allowed;
+}
+
+.BillPrice {
+    /* margin-top: 3.55rem; */
+    width: 100%;
+    max-width: 300px;
+    color: white;
+    background-color: #316274;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 3rem;
+    padding-inline: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 1.44rem;
+    border-radius: 8px;
+}
+
+.BillPrice div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.reset {
+    margin-bottom: 0.33rem;
+}
+
+.reset button {
+    width: 100%;
+    padding-block: 0.682rem;
+    background-color: #507785;
+    border: none;
+    font-size: 1.11rem;
+    color: white;
+}
+
+.BillPrice h4 {
+    font-size: 1.2rem;
+}
+
+.BillPrice span {
+    font-size: 1.45rem;
+    font-weight: bolder;
+}
+
+@media (max-width:670px) {
+    body{
+        flex-direction: column;
+    }
+}

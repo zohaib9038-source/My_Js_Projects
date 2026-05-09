@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+button {
+    background-color: rgb(163, 56, 245);
+    border-radius: 6px;
+    border: none;
+    color: white;
+    padding-block: 0.45rem;
+    padding-inline: 1.15rem;
+}
+
+.popUps {
+    margin-top: 2.899rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.1rem;
+}
+
+.message {
+    padding-inline: 0.33rem;
+    border: 1px solid black;
+    padding-block: 0.22rem;
+}
+
+.left_Right #x-axis,
+.top_Bottom #y-axis,
+.success_Warning select {
+    padding-block: 0.22rem;
+    padding-inline: 0.35rem;
+}
+
+.Show_msg {
+    display: flex;
+    align-items: center;
+    max-width: 350px;
+    padding-block: 0.22rem;
+    opacity: 0;
+    
+}
+.material-symbols-outlined{
+    cursor: pointer;
+}

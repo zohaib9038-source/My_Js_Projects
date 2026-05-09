@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background: linear-gradient(135deg, #d4f1d4, #a8e6cf);
+}
+.ResultContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.showResult{
+    margin-top: 5%;
+    margin-inline: auto;
+    width: 100%;
+    max-width: 600px;
+    background-color: #FF7A7A;
+    
+    border-radius: 10px;
+
+
+}
+.content{
+    border-radius: 10px;
+    /* border: 2px solid black; */
+    min-height: 100px;
+    width: 0%;
+    background-color: green;
+    transition: all 2s cubic-bezier(0.42, 0.13, 1, 1);
+    
+}
+.correctOutOfTotal,.progressMsg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.correctOutOfTotal h2{
+    margin-bottom: 2rem;
+}
+.progressMsg{
+    flex-direction: column;
+}
+.progressMsg h2{
+    margin-bottom: 2rem;
+}

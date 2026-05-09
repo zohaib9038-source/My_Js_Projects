@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.autoType{
+    max-width: 600px;
+    margin-inline: auto;
+    margin-top: 2.44rem;
+}
+.autoType .title::after{
+    display: inline-block;
+    content: '';
+    width: 2px;
+    height: 12px;
+    background-color: red;
+    margin-left: 3px;
+}

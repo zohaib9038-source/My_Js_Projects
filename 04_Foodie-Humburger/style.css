@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F6F0EB;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    max-width: 1990px;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2rem;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding-block: 0.553rem;
+    min-height: 40px;
+}
+
+nav {
+    display: flex;
+    gap: 3.44rem;
+}
+
+header nav a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.044rem;
+    color: #492118;
+}
+
+.logo {
+    width: 2.22rem;
+}
+
+.logo img {
+    width: 100%;
+}
+
+/* main section */
+main {
+    padding-inline: 1rem;
+}
+
+.burger {
+    max-width: 900px;
+    margin-top: 2.59rem;
+    margin-inline: auto;
+}
+
+.burger img {
+    width: 100%;
+}
+
+.burger p {
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.picks {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.picks img {
+    width: 100%;
+    max-width: 40rem;
+    margin-top: 1.489rem;
+    margin-bottom: 3.12824rem;
+
+}
+
+.goBack {
+    margin: 0;
+    width: 100%;
+    max-width: 40rem;
+    margin-inline: auto;
+}
+
+.goBack a {
+    margin-left: auto;
+}
+
+nav span {
+    position: absolute;
+    right: 0.961rem;
+    top: .568rem;
+    font-size: 1.89rem;
+}
+
+.humburger-menue-Container,
+nav span {
+    display: none;
+}
+
+@media (max-width:890px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:672px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media (max-width:546px) {
+    header {
+        position: sticky;
+        background-color: #ece2e208;
+        top: 0;
+        backdrop-filter: blur(9px);
+    }
+
+    nav {
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.7);
+        position: absolute;
+        top: 1rem;
+        right: -16rem;
+        gap: 1.3953rem;
+        padding: 1.9433rem 1.433rem;
+        transition:right 0.5s ease;
+
+    }
+    .animation{
+     right:0rem;
+    }
+
+    .navHide {
+        /* display: none; */
+        right:0rem;
+    }
+
+    nav span {
+        position: absolute;
+        right: 0.61rem;
+        top: .568rem;
+    }
+    nav span {
+        display: block;
+    }
+
+    .humburger-menue-Container {
+        width: 38px;
+        min-height: 30px;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100% 0% 0% 100% / 1% 1% 99% 99%;
+    }
+
+    .hamburger-icon {
+               font-size: 1.725rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:400px) {
+    .picks {
+        margin-top: 0rem;
+
+    }
+
+    .burger p {
+        margin-bottom: 1rem;
+        font-size: 10px;
+    }
+
+    .picks h2 {
+        font-size: 13px;
+    }
+
+}

@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.MemeContainer {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    border-left: 4px solid #222;
+    border-right: 4px solid #222;
+    color: green;
+    font-size: 1.15rem;
+    padding-inline: 1rem;
+    padding-block: .4rem;
+    font-weight: 700;
+    transition: all .4s ease;
+    margin-top: 2.13rem;
+
+}
+
+.Meme_Generator {
+    display: flex;
+    flex-direction: column;
+    gap: 1.445rem;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgb(247, 238, 238);
+    box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 16px;
+    padding: 40px 90px;
+    margin-top: 1rem;
+    transition: all .4s ease;
+
+}
+.Meme_Generator img{
+    width: 100%;
+}
+
+button:hover {
+    padding-inline: 36px;
+    border-left: 8px solid #222;
+    border-right: 8px solid #222;
+    letter-spacing: 3px;
+}
+
+button:hover+.Meme_Generator {
+    padding-inline: 130px;
+}
